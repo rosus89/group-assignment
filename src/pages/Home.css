@@ -1,0 +1,21 @@
+.home{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+    margin: 2em 0;
+}
+
+.paper {
+    background: #EEEEEE;
+}
+
+.hero { 
+    height: 300px;
+    
+}
+
+.featured {
+    display: flex;
+    justify-content: space-around;
+}

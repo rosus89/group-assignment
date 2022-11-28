@@ -1,11 +1,17 @@
-import { createProducts } from "../faker"
 import Layout from "../components/Layout"
+import './Home.css'
 
 function Home () {
-    console.log(createProducts(5))
     return (
         <Layout>
-            <div>Homepage</div>
+            <main className="home">
+                <section className="hero paper">hero</section>
+                <section className="featured">
+                    <div className="paper">1</div>
+                    <div className="paper">2</div>
+                    <div className="paper">3</div>
+                </section>
+            </main>
         </Layout>
     )
 }
