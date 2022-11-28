@@ -1,9 +1,14 @@
 import NavBar from "./NavBar"
+import './Header.css'
 
 function Header() {
-    return <>
-    <NavBar/>
-    </>
+    return (
+    <header>
+        logo
+        <NavBar/>
+        basket
+    </header>
+    )
 }
 
 

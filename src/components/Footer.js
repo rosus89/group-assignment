@@ -1,5 +1,13 @@
+import './Footer.css'
+
 function Footer() {
-    return <p>Footer</p>
+    return (
+    <footer>
+        <section>a</section>
+        <section>b</section>
+        <section>c</section>
+    </footer>
+    )
 }
 
 
