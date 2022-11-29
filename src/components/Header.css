@@ -1,4 +1,10 @@
 header {
     display: flex;
     justify-content: space-between;
+    padding: 0.15rem 0;
+}
+
+.basket {
+    justify-content: center;
+    align-content: center;
 }
