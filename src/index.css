@@ -13,8 +13,7 @@ code {
 }
 
 nav {
-  background-color: #0a7882;
-  min-height: 3vh;
+    min-height: 3vh;
   display: flex;
   flex-direction: row;
   align-items: center;
