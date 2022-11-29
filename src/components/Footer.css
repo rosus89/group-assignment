@@ -10,7 +10,6 @@ footer ul {
     text-transform: uppercase;
     font-weight: 600;
     cursor: pointer;
-    transition: color 0.4s linear;
     position: relative;
 }
 

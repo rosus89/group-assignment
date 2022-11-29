@@ -11,6 +11,7 @@ import "./index.css";
 // IMPORT PAGES HERE
 import Home from './pages/Home'
 import About from './pages/About'
+import Products from "./pages/Products";
 
 // DECLARE ROUTES FOR PAGES HERE
 // Router documentation here -> https://reactrouter.com/en/main/start/tutorial
@@ -23,6 +24,10 @@ const router = createBrowserRouter([
   {
     path: "/about",
     element: <About />
+  },
+  {
+    path: "/products",
+    element: <Products />
   }
 ]);
 
