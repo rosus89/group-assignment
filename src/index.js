@@ -5,7 +5,6 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import "./index.css";
-import "./NavBar.css";
 
 
 
