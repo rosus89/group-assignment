@@ -1,6 +1,18 @@
-footer {
+footer ul {
     display: flex;
-    justify-content: space-around;
-    border-top: solid 1px #bba2a2;
-    padding: 1rem 0 ;
+    align-items: center;
+}
+
+.footer-link {
+    list-style: none;
+    font-size: 1rem;
+    padding: .625rem 1.25rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    cursor: pointer;
+    position: relative;
+}
+
+a {
+    text-decoration: none;
 }
