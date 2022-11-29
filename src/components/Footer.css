@@ -1,6 +1,6 @@
-
 footer ul {
     display: flex;
+    align-items: center;
 }
 
 .footer-link {
@@ -13,6 +13,7 @@ footer ul {
     transition: color 0.4s linear;
     position: relative;
 }
+
 a {
     text-decoration: none;
 }
