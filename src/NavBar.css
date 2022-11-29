@@ -1,0 +1,17 @@
+nav ul {
+    display: flex;
+}
+
+.nav-link {
+    list-style: none;
+    font-size: 1rem;
+    padding: .625rem 1.25rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    cursor: pointer;
+    transition: color 0.4s linear;
+    position: relative;
+}
+a {
+    text-decoration: none;
+}
