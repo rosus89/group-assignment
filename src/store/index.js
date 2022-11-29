@@ -6,10 +6,10 @@ const initialState= {}
 
 function reducer (state, action) {
     switch (action.type) {
-        case 'a':
+        case 'addToBasket':
             return {
             }
-        case 'b':
+        case 'removeFromBasket':
             return {
             }
         default:

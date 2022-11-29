@@ -1,3 +1,5 @@
+import './Product.css'
+
 function Product ({name, image, price}) {
     return (
         <div>
