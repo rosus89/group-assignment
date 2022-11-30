@@ -1,5 +1,6 @@
 import Layout from "../components/Layout"
 import ListProducts from "../components/ListProducts"
+import './Products.css'
 import {createProducts} from "../faker"
 
 
@@ -8,7 +9,9 @@ function Products () {
 
     return (
         <Layout>
-            <ListProducts products={createProducts(5)} />
+            <div className="products-page">
+            <ListProducts products={createProducts(9)} />
+            </div>
         </Layout>
     )
 }
