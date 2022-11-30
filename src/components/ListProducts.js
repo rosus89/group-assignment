@@ -1,11 +1,9 @@
 import Product from "./Product";
 
 
-
-
-function ListProducts ({products}) {
+function ListProducts ({products, dispatch}) {
     return (
-        products.map(product => <Product name={product.name} image={product.image} price={product.price}></Product>)
+        products.map(product => <Product product={product} dispatch={dispatch}></Product>)
     )
 }
 

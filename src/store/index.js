@@ -12,9 +12,13 @@ function reducer (state, action) {
     switch (action.type) {
         case 'addToBasket':
             return {
+                ...state,
+                basket: [...state.basket, action.payload]
             }
         case 'removeFromBasket':
             return {
+                ...state,
+                basket: state.basket.filter(item => item.id === action.payload)
             }
         case 'getProducts':
             return {

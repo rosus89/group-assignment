@@ -1,6 +1,6 @@
 
 // import './App.css';
-import {useReducer, useEffect, useState} from "react"
+import {useReducer, useEffect} from "react"
 import {reducer, initialState} from './store';
 import Home from './pages/Home';
 import About from './pages/About';
@@ -27,7 +27,7 @@ function App() {
           <Routes>
               <Route path='/' element={<Home/>}/>
               <Route path='/about' element={<About/>}/>
-              <Route path='/products' element={<Products products={state.products}/>}/>
+              <Route path='/products' element={<Products products={state.products} dispatch={dispatch}/>}/>
 
           </Routes>
         </Layout>

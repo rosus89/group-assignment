@@ -4,11 +4,11 @@ import './Products.css'
 
 
 
-function Products ({products}) {
+function Products ({products, dispatch}) {
 
     return (
             <div className="products-page">
-            <ListProducts products={products} />
+            <ListProducts products={products} dispatch={dispatch} />
             </div>
     )
 }
