@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/group-assignment/static/css/main.4ce9a712.css",
+    "main.js": "/group-assignment/static/js/main.8846ec8d.js",
+    "index.html": "/group-assignment/index.html",
+    "main.4ce9a712.css.map": "/group-assignment/static/css/main.4ce9a712.css.map",
+    "main.8846ec8d.js.map": "/group-assignment/static/js/main.8846ec8d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4ce9a712.css",
+    "static/js/main.8846ec8d.js"
+  ]
+}
