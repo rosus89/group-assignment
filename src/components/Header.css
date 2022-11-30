@@ -6,9 +6,9 @@ header {
 
 header img {
     height: 30px;
+    margin: auto 0;
 }
 
 .basket {
-    justify-content: center;
-    align-content: center;
+    margin: auto 0;
 }
