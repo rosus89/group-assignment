@@ -6,7 +6,7 @@ import { faBasketShopping } from '@fortawesome/free-solid-svg-icons'
 function Header() {
     return (
     <header>
-        logo
+        <img src="./images/placeholder-logo.png" alt="logo" />
         <NavBar/>
         <div className="basket">
             <FontAwesomeIcon icon={ faBasketShopping }/>
