@@ -1,4 +1,8 @@
-const initialState= {}
+const initialState= {   
+                        productsLoaded:false,
+                        products:[],
+                        basket:[]
+                    }
 
 // will probably use this later
 // State changing actions go here 
@@ -11,6 +15,12 @@ function reducer (state, action) {
             }
         case 'removeFromBasket':
             return {
+            }
+        case 'getProducts':
+            return {
+                ...state,
+                products: action.payload,
+                productsLoaded: true
             }
         default:
             return state;

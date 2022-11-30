@@ -1,9 +1,8 @@
-import Layout from "../components/Layout"
 import './Home.css'
 
 function Home () {
     return (
-        <Layout>
+
             <main className="home">
                 <section className="hero paper">hero</section>
                 <section className="featured">
@@ -12,7 +11,7 @@ function Home () {
                     <div className="paper">3</div>
                 </section>
             </main>
-        </Layout>
+
     )
 }
 
