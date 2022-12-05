@@ -13,11 +13,10 @@ function reducer (state, action) {
         case 'addToBasket':
             return {
                 ...state,
-                // basket: [...state.basket, addToBasket(state.basket, action.payload)]
-                basket: [...state.basket, inBasket(state.basket, action.payload)]
+                 basket:addToBasket(state, action.payload)
             }
         case 'removeFromBasket':
-            console.log(action.payload)
+
             return {
                 ...state,
                 basket: state.basket.filter(item => item.id === action.payload)
@@ -33,17 +32,28 @@ function reducer (state, action) {
     
     }
 }
-function inBasket (basket,value) {
-    return (basket.find((item)=> item.id===value.id ) === undefined ? addToBasket(basket,value) : ),
-}
 
 
-function addToBasket (basket, value) {
-    return {
-        id: basket.length > 0 ? basket[basket.length-1].id + 1 : 1,
-        ...value,
-        amount:1
 
+function addToBasket (state, product) {
+
+    if (state.basket.find((item)=> item._id===product._id )){
+         return state.basket.map(item => {
+            if(item._id===product._id)
+            {
+                return {...item, amount:item.amount+1}
+            }
+            else {
+                return item
+            }
+         })
+    }
+    else{
+        return [...state.basket,{...product,amount:1}]
+        
+
+
+        
     }
 }
 
