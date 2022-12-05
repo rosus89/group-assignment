@@ -23,7 +23,7 @@ function App() {
 
   return (
     <BrowserRouter>
-      <Layout basket={state.basket} dispatch={dispatch}>
+      <Layout basket={state.basket} dispatch={dispatch} modal={state.modal}>
           <Routes>
               <Route path='/' element={<Home/>}/>
               <Route path='/about' element={<About/>}/>

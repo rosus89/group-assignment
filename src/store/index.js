@@ -1,7 +1,8 @@
 const initialState= {   
                         productsLoaded:false,
                         products:[],
-                        basket:[]
+                        basket:[],
+                        modal:false
                     }
 
 // will probably use this later
@@ -30,6 +31,12 @@ function reducer (state, action) {
             return {
                 ...state,
                 basket:changeAmount(state, action.payload.id, action.payload.action)
+            }
+        case 'toggleBasket':
+            console.log("triggered")
+            return {
+                ...state,
+                modal:!state.modal
             }
 
         default:
